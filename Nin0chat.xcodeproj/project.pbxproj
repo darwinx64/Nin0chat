@@ -6,13 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A205FE962CC851C6006BFDA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A205FE952CC851C4006BFDA6 /* README.md */; };
+		A2F8B8E02CCAF4E200FB5763 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = A2F8B8DF2CCAF4E200FB5763 /* Starscream */; };
+		A2F8B9152CCB5C6000FB5763 /* Setting in Frameworks */ = {isa = PBXBuildFile; productRef = A2F8B9142CCB5C6000FB5763 /* Setting */; };
+		A2F8B94B2CCB5F9D00FB5763 /* .all-contributorsrc in Resources */ = {isa = PBXBuildFile; fileRef = A2F8B94A2CCB5F9D00FB5763 /* .all-contributorsrc */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A205FE802CC84D15006BFDA6 /* Nin0chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nin0chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A205FE952CC851C4006BFDA6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A2F8B94A2CCB5F9D00FB5763 /* .all-contributorsrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".all-contributorsrc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A2F8B8A42CCA05D800FB5763 /* Exceptions for "Nin0chat" folder in "Nin0chat" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A205FE7F2CC84D15006BFDA6 /* Nin0chat */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A205FE822CC84D15006BFDA6 /* Nin0chat */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A2F8B8A42CCA05D800FB5763 /* Exceptions for "Nin0chat" folder in "Nin0chat" target */,
+			);
 			path = Nin0chat;
 			sourceTree = "<group>";
 		};
@@ -23,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F8B8E02CCAF4E200FB5763 /* Starscream in Frameworks */,
+				A2F8B9152CCB5C6000FB5763 /* Setting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +56,10 @@
 		A205FE772CC84D15006BFDA6 = {
 			isa = PBXGroup;
 			children = (
+				A2F8B94A2CCB5F9D00FB5763 /* .all-contributorsrc */,
+				A205FE952CC851C4006BFDA6 /* README.md */,
 				A205FE822CC84D15006BFDA6 /* Nin0chat */,
+				A2F8B9122CCB5C4E00FB5763 /* Frameworks */,
 				A205FE812CC84D15006BFDA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +70,13 @@
 				A205FE802CC84D15006BFDA6 /* Nin0chat.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A2F8B9122CCB5C4E00FB5763 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +99,8 @@
 			);
 			name = Nin0chat;
 			packageProductDependencies = (
+				A2F8B8DF2CCAF4E200FB5763 /* Starscream */,
+				A2F8B9142CCB5C6000FB5763 /* Setting */,
 			);
 			productName = Nin0chat;
 			productReference = A205FE802CC84D15006BFDA6 /* Nin0chat.app */;
@@ -94,6 +130,10 @@
 			);
 			mainGroup = A205FE772CC84D15006BFDA6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A2F8B8DE2CCAF4E200FB5763 /* XCRemoteSwiftPackageReference "Starscream" */,
+				A2F8B9132CCB5C6000FB5763 /* XCRemoteSwiftPackageReference "Setting" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A205FE812CC84D15006BFDA6 /* Products */;
 			projectDirPath = "";
@@ -109,6 +149,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F8B94B2CCB5F9D00FB5763 /* .all-contributorsrc in Resources */,
+				A205FE962CC851C6006BFDA6 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,11 +287,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Nin0chat/Nin0chat.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nin0chat/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nin0chat/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -267,11 +313,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tiramisu.Nin0chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -282,11 +330,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Nin0chat/Nin0chat.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nin0chat/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nin0chat/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -304,11 +356,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tiramisu.Nin0chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -335,6 +389,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2F8B8DE2CCAF4E200FB5763 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.8;
+			};
+		};
+		A2F8B9132CCB5C6000FB5763 /* XCRemoteSwiftPackageReference "Setting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/Setting";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2F8B8DF2CCAF4E200FB5763 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2F8B8DE2CCAF4E200FB5763 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		A2F8B9142CCB5C6000FB5763 /* Setting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2F8B9132CCB5C6000FB5763 /* XCRemoteSwiftPackageReference "Setting" */;
+			productName = Setting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A205FE782CC84D15006BFDA6 /* Project object */;
 }

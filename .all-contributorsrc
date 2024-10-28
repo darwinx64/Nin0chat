@@ -1,0 +1,47 @@
+{
+    "contributors": [
+        {
+            "login": "darwinx64",
+            "name": "Tiramisu",
+            "avatar_url": "https://github.com/darwinx64.png",
+            "profile": "https://tiramisu.gay/",
+            "description": "This client"
+        },
+        {
+            "login": "nin0-dev",
+            "name": "nin0",
+            "avatar_url": "https://github.com/nin0-dev.png",
+            "profile": "https://nin0.dev/",
+            "description": "nin0chat"
+        },
+        {
+            "login": "wingio",
+            "name": "Wing",
+            "avatar_url": "https://github.com/wingio.png",
+            "profile": "https://wingio.xyz/",
+            "description": "Icon, work on nin0chat"
+        },
+        {
+            "login": "Kodarru",
+            "name": "Kodarru",
+            "avatar_url": "https://github.com/Kodarru.png",
+            "profile": "https://kodarru.me/",
+            "description": "work on nin0chat"
+        },
+        {
+            "login": "splatterxl",
+            "name": "splatter",
+            "avatar_url": "https://github.com/splatterxl.png",
+            "profile": "",
+            "description": "work on nin0chat"
+        },
+        {
+            "login": "vendicated",
+            "name": "Vee",
+            "avatar_url": "https://github.com/Vendicated.png",
+            "profile": "https://vendicated.dev/",
+            "description": "Some assistance"
+        },
+    ]
+}
+
